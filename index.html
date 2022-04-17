@@ -85,6 +85,8 @@
 <!-- Se usa una Grid para tener 3 columnas con informacion de la empresa. Seccion desaparece en pantallas pequeñas-->
 
           <div class="container">
+			  <br>
+			  <br>
               <div id="quienesomos" class="row  pt-5 d-none d-sm-block d-xs-block">
               <div class="row  pt-3 text-center" style="font-family:Cabin; font-size:16pt;">
 				  <h2 class="text-center">QUIÉNES SOMOS?</h2>
@@ -130,6 +132,8 @@
 			</div>
 <!-- Se usan Cards dentro de una  Grid para tener 4 columnas con fotos e informacion de lugares destacados-->
 			<div id="destacados" style="font-family:Cabin; font-size:16pt;">
+			<br>
+			<br>
 			<h2 class="text-center"> DESTACADOS</h2>
 			<hr>
 			<div>
@@ -186,7 +190,7 @@
                   </div>
                   <div class="col-md-3">
 
-                        <div class="container" style="border: 1px solid white;">
+                        <div class="container">
                             <div class="row">
                               <div class="Cards col-md-12">
                                         <img src="assets/img/card4.jpg" class="img-fluid" alt="slider 6">
@@ -206,24 +210,26 @@
           </div>
 <!-- Forms de contacto, Bootstrap 5.1-->
 		  <div id="contacto">
+				<br>
+				<br>
 				<h2 class="text-center"> CONTACTO</h2>
 				<hr>
 				<form>
 				  <div class="mb-3">
 					<label for="exampleInputName1" class="form-label">Nombre</label>
-					<input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+					<input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"  data-bs-toggle="tooltip" data-bs-placement="left" title="Ingrese su nombre completo">
 				  </div>
 				  <div class="mb-3">
 					<label for="exampleInputAbout1" class="form-label">Asunto</label>
-					<input type="text" class="form-control" id="exampleInputAbout1">
+					<input type="text" class="form-control" id="exampleInputAbout1" data-bs-toggle="tooltip" data-bs-placement="left" title="Indiquenos el motivo de su contacto">
 				  </div>
 				 
 				  <div class="mb-3">
 				  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" data-bs-toggle="tooltip" data-bs-placement="left" title="Indique detalles de requerimiento"></textarea>
 				</div>
 				   
-				  <button type="submit" class="btn btn-primary">Enviar</button>
+				  <button id="enviarForms" type="submit" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" title="Presiona para enviar tu solicitud de contacto">Enviar</button>
 				  <br> 
 				  <br>
 				  <br>
@@ -233,12 +239,16 @@
 <!-- Pie de pagina con referencia a redes sociales-->
         <footer>
                 <div class="row">
-                  <div class="col-md-12 text-light bg-primary">
+                  <div class="col-md-6 text-light bg-primary text-center">
                     <span>VIAJES CHILE </span>
-					<i class="fa-brands fa-github"></i>
-					<i class="fa-brands fa-linkedin"></i>
-					<i class="fa-brands fa-twitter-square"></i>
-					<i class="fa-brands fa-facebook-square"></i>
+				  </div>
+				  <div class="col-md-6 text-light bg-primary text-center">
+					<span>
+						<a href="https://www.github.com" target="_blank" style="color: white; text-decoration: none;"> <i class="fa-brands fa-github"></i> </a>
+						<a href="https://www.linkedin.com" target="_blank" style="color: white; text-decoration: none;"> <i class="fa-brands fa-linkedin"></i> </a>
+						<a href="https://www.twitter.com" target="_blank" style="color: white; text-decoration: none;"> <i class="fa-brands fa-twitter-square"></i> </a>
+						<a href="https://www.facebook.com" target="_blank" style="color: white; text-decoration: none;"> <i class="fa-brands fa-facebook-square"></i> </a>
+					</span>
                   </div>
                 </div>
         </footer>
